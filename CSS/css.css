@@ -6,9 +6,25 @@
     max-height: 99999px;
 ;
 }
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../Fonts/Arial/ArialRegular/ArialRegular.eot");
+    src: url("../Fonts/Arial/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../Fonts/Arial/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../Fonts/Arial/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSans-Regular";
+    src: url("../Fonts/ptsans/PTS55F.ttf");
+    /*src: url("../Fonts/ptsans/PTS56F.ttf");
+    src: url("../Fonts/ptsans/PTS75F.ttf");
+    src: url("../Fonts/ptsans/PTS76F.ttf");*/
+}
 .page-wrapper {
-    padding: 20px;
-    font-family: 'Cabin', sans-serif;
+    padding: 50px 38px 0px 38px;
+    font-family: 'ArialRegular', sans-serif;
 }
 .person-name h3 {
     font-size: 31px;
@@ -17,7 +33,7 @@ p {
     font-size: 31px;
 }
 .person-name {
-    padding-left: 270px;
+    padding-left: 259px;
     line-height: 39px;
 }
 .person-name div p {
@@ -28,105 +44,123 @@ p {
     width: 100%;
 }
 .person-text {
-    padding-left: 244px;
+    padding-left: 243px;
     box-shadow: 0 0 0 1px rgba(60, 44, 0, 0.25);
     background-color: #fffbc8;
     border-radius: 10px;
-    margin-left: 57px;
-    margin-top: 45px;
-    padding-top: 10px
+    margin-left: 44px;
+    margin-top: 6px;
+    padding-top: 10px;
 }
 .person-text div p {
     padding: 4px;
-    line-height: 47px;
+    line-height: 40px;
     margin-left: -34px;
+    font-size: 29px;
+
 }
-#all-reviews {
+.all_reviews {
     color: blue;
-    font-size: 30px;
+    font-size: 31px;
     border-bottom: 2px solid blue;
+    margin-top: 8px;
 }
-#last-reviews {
-    color: blue;
-    font-size: 30px;
-    border-bottom: 2px solid blue;
-}
-#all-reviews:active {
-    color: black;
+.last_reviews {
+    font-size: 36px;
     border: none;
-}
-#last-reviews:active {
     color: black;
-    border: none;
+    font-weight: bold;
 }
 
+.newClassAll {
+    font-size: 36px;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+.newClassLast {
+    color: blue;
+    font-size: 31px;
+    border-bottom: 2px solid blue;
+    font-weight: normal;
+    margin-top: 10px;
+}
 .person-photo {
-    width: 261px;
+    width: 240px;
     position: absolute;
-    top: -71px;
+    top: -86px;
 }
 .person-photo-wrap {
     position: relative;
 }
 h3 {
-    font-size: 31px;
+    font-size: 39px;
     font-weight: 700;
 }
 .person-text div {
-    height: 118px;
+    height: 104px;
 }
 .services {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    margin-left: 262px;
+    margin-left: 257px;
 }
 .services-text {
     display: flex;
     justify-content: flex-end;
     padding-top: 25px;
-    padding-right: 32px;
+    padding-right: 87px;
 }
 .graph-wrap {
     display: flex;
     flex-direction: column;
-    padding-top: 9px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     margin-top: 15px;
-    padding-right: 59px;
+    padding-top: 27px;
+    padding-right: 111px;
 }
+
 .graph {
     display: flex;
     justify-content: space-between;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 .green-line {
-    width: 560px;
-    height: 72px;
+    width: 440px;
+    height: 50px;
     border-left: 2px solid gray;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: #b1e19b;
 }
+
 .blue-1-line {
-    width: 257px;
-    height: 72px;
+    width: 127px;
+    height: 50px;
     border-left: 2px solid grey;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: #ace2f8;
+}
+
+.line-number p {
+    font-weight: bold;
 }
 .blue-2-line {
     width: 81px;
-    height: 72px;
+    height: 50px;
     border-left: 2px solid gray;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: #ace2f8;
 }
 .line div {
-    padding: 19px;
+    padding: 10px;
+    display: flex;
+}
+.line div p {
+    padding-right: 5px;
 }
 .line-number p {
     padding-top: 18px;
@@ -135,10 +169,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    padding-right: 52px;
+    padding-right: 112px;
 }
 .blue-2 {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .img-com {
     width: 28px;
@@ -159,16 +193,11 @@ img {
 .reviews-count {
     display: flex;
 }
-.last-comments div {
-    font-size: 30px;
-}
+
 .all-comments {
-    padding-left: 50px;
+    padding-left: 25px;
 }
-.all-comments button {
-    font-size: 31px;
-    background: white;
-}
+
 .like-com {
     display: flex;
 }
@@ -183,7 +212,7 @@ img {
     display: flex;
 }
 .write-name {
-    padding-right: 30px;
+    padding-right: 10px;
 }
 .write-name p {
     font-weight: bold;
@@ -197,8 +226,10 @@ img {
 }
 .write-text {
     margin-top: 30px;
-    background: #ace2f8;
+    background: #f2fbff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.19);
 }
 .write-text p {
     padding: 20px;
@@ -209,7 +240,7 @@ img {
 }
 .triangle {
     border: 20px solid transparent;
-    border-left: 20px solid #ace2f8;
+    border-left: 20px solid #f2fbff;
     position: absolute;
     left: 55px;
     top: -20px;
@@ -219,16 +250,14 @@ img {
 }
 .send-text-wrap {
     background-color: #f2f2f2;
-    margin: 0 auto;
-    /* padding: 0; */
-    margin-top: 20px;
-    /* width: 1000px; */
-    margin-left: -20px;
+    margin-top: 40px;
+    margin-left: -40px;
     height: auto;
-    /* overflow: hidden; */
-    margin-right: -20px;
-    padding-top: 75px;
-    padding-left: 20px;
+    overflow: hidden;
+    margin-right: -40px;
+    padding-top: 58px;
+    padding-left: 36px;
+    padding-right: 36px;
 }
 .button-wrap {
     padding-top: 40px;
@@ -238,6 +267,7 @@ img {
     padding-bottom: 50px;
 }
 .button-wrap button {
+    font-family: "PTSans-Regular", sans-serif;
     font-size: 30px;
     padding: 20px 100px;
     background-color: #fdd639;
@@ -245,8 +275,7 @@ img {
     font-weight: bolder;
 }
 textarea {
-    font-size: 12px;
-    width: 940px;
+    width: 100%;
     height: 125px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.44), inset 0 1px 2px rgba(0, 0, 0, 0.3);
     border: 1px solid #000000;
