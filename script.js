@@ -73,6 +73,10 @@ document.getElementById("add-btn").addEventListener("click", (e) => {
         data: "1 июня 2020",
         text: inputValue
     }
+    if(inputValue === "") {
+        alert('Заполните поле');
+        return true
+    }
     COMMENTS.push(newComment);
     RenderComments(COMMENTS.slice(-3));
     document.getElementById("textAdd").value = ""
@@ -87,4 +91,13 @@ document.getElementById("last-reviews").addEventListener("click",(e) => {
     RenderComments(COMMENTS.slice(-3))
 });
 document.getElementById("like-counter").innerText = Math.floor(Math.random() * 100);
+
+document.getElementById("textAdd")
+    .addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.shiftKey && event.keyCode === 13) {
+            document.getElementById("add-btn").click();
+        }
+    });
+
 
